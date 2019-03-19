@@ -6,5 +6,5 @@ package com.mansi.housingcost.services;
 * @return cost of house
 */
 public interface HousingCostServices {
-	public double costofhouse(double area, String material, String automated);
+	public double costOfHouse(double area, String material, String automated);
 }
