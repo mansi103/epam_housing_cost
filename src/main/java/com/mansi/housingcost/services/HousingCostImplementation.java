@@ -3,31 +3,34 @@ package com.mansi.housingcost.services;
 public class HousingCostImplementation implements HousingCostServices {
 
 	@Override
-	public double costofhouse(double areaofhouse, String Material, String Automated) {
-		// TODO Auto-generated method stub
+	public double costOfHouse(double areaofhouse, String material, String automated) {
 		double costofHouse = 0.0;
-		if (Material.equals("standard")) {
+		 if (automated.equals("fullyautomated")) {
 
-			costofHouse = areaofhouse * 1200;
-
-		} else if (Material.equals("aboveStandard")) {
-
-			costofHouse = areaofhouse * 1500;
-
-		} else if (Material.equals("highstandard")) {
-
-			costofHouse = areaofhouse * 1800;
-
-		} else if (Automated.equals("fullyautomated")) {
-
-			if (Material.equals("highstandard")) {
+			if (material.equals("highstandard")) {
 
 				costofHouse = areaofhouse * 2500;
 
 			}
 
 		}
+		else{
+			if (material.equals("standard")) {
 
+			costofHouse = areaofhouse * 1200;
+
+			} 
+			else if (material.equals("aboveStandard")) {
+
+			costofHouse = areaofhouse * 1500;
+
+			} 
+			else if (material.equals("highstandard")) {
+
+			costofHouse = areaofhouse * 1800;
+
+			}
+		}
 		return costofHouse;
 	}
 
