@@ -22,9 +22,9 @@ public class App {
 	 * @param Automated
 	 * @return cost of house
 	 */
-	public double calculateCostofHouse(double areaofhouse, String Material, String Automated) {
+	public double calculateCostOfHouse(double areaofhouse, String material, String automated) {
 
-		return costService.costofhouse(areaofhouse, Material, Automated);
+		return costService.costOfHouse(areaofhouse, material, automated);
 
 	}
 
