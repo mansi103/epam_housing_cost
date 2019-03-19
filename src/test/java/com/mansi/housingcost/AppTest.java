@@ -46,7 +46,7 @@ public class AppTest
 
 	public void Standardhousecost() {
 
-		assertEquals(12000.0, app.calculateCostofHouse(10, "standard", "no"), 0.0);
+		assertEquals(12000.0, app.calculateCostOfHouse(10, "standard", "no"), 0.0);
 
 	}
 
@@ -60,7 +60,7 @@ public class AppTest
 
 	public void AboveStandardHouseCost() {
 
-		assertEquals(15000.0, app.calculateCostofHouse(10, "abovestandard", "no"), 0.0);
+		assertEquals(15000.0, app.calculateCostOfHouse(10, "abovestandard", "no"), 0.0);
 
 	}
 
@@ -74,7 +74,7 @@ public class AppTest
 
 	public void HighStandardHouseCost() {
 
-		assertEquals(18000.0, app.calculateCostofHouse(10, "highstandard", "no"), 0.0);
+		assertEquals(18000.0, app.calculateCostOfHouse(10, "highstandard", "no"), 0.0);
 
 	}
 
@@ -89,7 +89,7 @@ public class AppTest
 
 	public void HighstandardhouseCostWithAutomation() {
 
-		assertEquals(25000.0, app.calculateCostofHouse(10, "highstandard", "fullyautomated"), 0.0);
+		assertEquals(25000.0, app.calculateCostOfHouse(10, "highstandard", "fullyautomated"), 0.0);
 
 	}
 
