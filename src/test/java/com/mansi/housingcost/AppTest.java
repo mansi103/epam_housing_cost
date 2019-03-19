@@ -60,7 +60,7 @@ public class AppTest
 
 	public void AboveStandardHouseCost() {
 
-		assertEquals(15000.0, app.calculateCostOfHouse(10, "abovestandard", "no"), 0.0);
+		assertEquals(15000.0, app.calculateCostOfHouse(10, "aboveStandard", "no"), 0.0);
 
 	}
 
